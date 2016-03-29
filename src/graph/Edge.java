@@ -6,4 +6,7 @@ package graph;
 public class Edge {
     private Vertex destination;
 
+    public Edge edge(Vertex destination){
+    	this.destination=destination;
+    }
 }
