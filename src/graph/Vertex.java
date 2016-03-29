@@ -23,20 +23,34 @@ public class Vertex {
         this.name = n;
     }
 
-    private addEdge(Edge edge){
+    /**
+    @param Edge edge
+    */
+    private void addEdge(Edge edge){
         edges.add(edge);
     }
 
-    public linkUndirected(Vertex vertex){
+    
+    /**
+    @param Vertex vertex
+    */
+    public void linkUndirected(Vertex vertex){
         edges.addEdge(new edge(vertex));
         vertex.addEdge(new edge(this));
     }
 
-    public linkDirectedTowards(Vertex destination){
+    /**
+    @param Vertex destination
+    */
+
+    public void linkDirectedTowards(Vertex destination){
         addEdge(new edge(destination));
     }
 
-    public linkDirectedFrom(Vertex origin){
+    /**
+    @param Vertex origin
+    */
+    public void linkDirectedFrom(Vertex origin){
         origin.addEdge(new edge(this));
     }
 }
