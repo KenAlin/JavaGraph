@@ -1,3 +1,0 @@
-Manifest-Version: 1.0
-Created-by: Team Quetzal
-Main-Class: TestGraph.class
