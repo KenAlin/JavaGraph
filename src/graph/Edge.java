@@ -1,16 +1,9 @@
 package graph;
 
 /**
- * Created by kevin.servige on 23/03/2016.
+ * Created by Team Quetzal on 23/03/2016.
  */
-public class Edge {
-    private Vertex destination;
-
-    /**
-    @param Vertex destination
-    */
-    
-    public Edge edge(Vertex destination){
-    	this.destination=destination;
-    }
+public abstract class Edge {
+    protected Vertex origin;
+    protected Vertex destination;
 }
